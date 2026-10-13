@@ -129,10 +129,9 @@ X_test = scaler.transform(X_test)
 # Создаём модель
 model = MLPClassifier(
     hidden_layer_sizes=(10, 10),
-    max_iter=1000,
+    max_iter=200,
     random_state=42
 )
-
 # Обучаем модель
 model.fit(X_train, y_train)
 
